@@ -26,4 +26,17 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(1fr,4);
+    margin-top: 30px;
+}
+
+
+.articleImg{
+    max-width: 300px;
+}
+
+article{
+    align-items: center;
+    background-color: #d9d9d9;
+    margin: 15px;
+
 }
