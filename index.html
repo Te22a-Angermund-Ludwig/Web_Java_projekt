@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <script defer src="./script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -25,8 +25,18 @@
     <aside>
         <a href=""><img class="logo" src="./img/cart.webp" alt=""></a>
         <div id="varukorg">
+            <h2 id="rubrik-varukorg">Varukorg</h2>
+            <div id="varukorg-lista">
 
+            </div>
+
+            <div class="summa">
+                <button id="kassadags">Betala</button>
+                <div id="summa"></div>
+
+            </div>
         </div>
+        <button onclick="rensa()" class="rensaKnapp">Rensa</button>
 
     </aside>
     <main>
