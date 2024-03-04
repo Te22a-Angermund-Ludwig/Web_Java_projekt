@@ -105,8 +105,11 @@ function Dior_1_kundvagn(){
     console.log("produkt fält: "+produkt_fält);
     produkt_fält_Json=JSON.stringify(produkt_fält);
     window.localStorage.setItem("produkt_fält", produkt_fält_Json);
+    visa_produkter(produkt);
 }
 
 function rensa(){
     localStorage.clear()
 }
+
+
