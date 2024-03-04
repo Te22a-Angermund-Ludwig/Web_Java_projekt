@@ -122,3 +122,63 @@ p{
 label{
     font-size: 1.2vw;
 }
+
+@media only screen and (min-width: 641px) and (max-width:
+1007px) {
+
+body{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 20vw 5fr;
+}
+
+.sko-logo{
+    height: 10vw;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vw 10vw;
+}
+
+a{
+    font-size: 3vw;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.articleImg{
+    margin-left: 6vw;
+}
+
+.articleText{
+    margin-left: 6vw;
+
+}
+
+label{
+    font-size: 3vw;
+}
+
+p{
+    font-size: 3vw;
+}
+
+.addtocart{
+    font-size: 2vw;
+    width: 12vw;
+    margin-bottom: 5vw;
+}
+
+article{
+    height: 30vw;
+}
+
+.dropdown{
+    margin-bottom: 10vw;
+}
+}
