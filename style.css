@@ -182,3 +182,82 @@ article{
     margin-bottom: 10vw;
 }
 }
+
+@media only screen and (min-width: 1px) and (max-width:
+640px) {
+
+body{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 30vw 5fr;
+}
+
+a{
+    font-size: 3vw;
+}
+.sko-logo{
+    width: 40vw;
+    height: 20vw;
+    margin-right: 10vw;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10vw;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 1/3;
+}
+
+article{
+    height: 40vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 10vw;
+    text-align: center;
+}
+
+.articleImg{
+    grid-column: 2/3;
+}
+
+
+.articleText{
+    grid-row: 2/3;
+}
+
+
+p{
+    font-size: 7vw;
+}
+
+.dropdown{
+    grid-row: 2/3;
+    font-size: 5vw;
+}
+
+label{
+    font-size: 5vw;
+}
+
+.addtocart{
+    grid-row: 2/3;
+    grid-column: 3/4;
+    font-size: 4vw;
+    width: 20vw;
+    margin-bottom: 7vw;
+}
+
+aside{
+    grid-row: 1/2;
+}
+
+.logo{
+    margin-top: 6vw;
+}
+
+}

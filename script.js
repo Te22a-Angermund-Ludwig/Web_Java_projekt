@@ -107,19 +107,3 @@ function Dior_1_kundvagn(){
     window.localStorage.setItem("produkt_fält", produkt_fält_Json);
     visa_kundvagn(produkt_fält);
 }
-
-function visa_kundvagn(produkt) {
-    if(!produkt){
-        console.log("visa_produkter TOM");
-        return;
-    }
-    let produkt_div = document.querySelector(".varukorg");
-    produkt_div.innerHTML="";
-    for (let i = 0; i < produkt.length; i++) {
-        let div = document.createElement("div");
-        let h2 = document.createElement("h2");
-        h2.innerHTML= produkt[i].namn+" Pris: "+produkt[i].pris
-        div.append(h2);
-        produkt_div.append(div);
-    }
-}
