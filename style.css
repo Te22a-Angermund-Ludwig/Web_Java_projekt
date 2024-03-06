@@ -125,6 +125,18 @@ label{
     font-size: 1.2vw;
 }
 
+.rensa_knapp{
+    width: 5vw;
+    font-size: 1.3vw;
+    border-radius: 10px;
+    margin-left: 1.2vw;
+    background-color: white;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+
+
 @media only screen and (min-width: 641px) and (max-width:
 1007px) {
 
@@ -261,5 +273,7 @@ aside{
 .logo{
     margin-top: 6vw;
 }
+
+
 
 }

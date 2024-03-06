@@ -20,7 +20,7 @@ function Off_white_kundvagn(){
     console.log("produkt fält: "+produkt_fält);
     produkt_fält_Json=JSON.stringify(produkt_fält);
     window.localStorage.setItem("produkt_fält", produkt_fält_Json);
-    visa_kundvagn(produkt_fält);
+    visa_produkter(produkt_fält);
 }
 
 
@@ -42,7 +42,7 @@ function Travis_1_kundvagn(){
     console.log("produkt fält: "+produkt_fält);
     produkt_fält_Json=JSON.stringify(produkt_fält);
     window.localStorage.setItem("produkt_fält", produkt_fält_Json);
-    visa_kundvagn(produkt_fält);
+    visa_produkter(produkt_fält);
 }
 
 function Travis_1_high_kundvagn(){
@@ -63,7 +63,7 @@ function Travis_1_high_kundvagn(){
     console.log("produkt fält: "+produkt_fält);
     produkt_fält_Json=JSON.stringify(produkt_fält);
     window.localStorage.setItem("produkt_fält", produkt_fält_Json);
-    visa_kundvagn(produkt_fält);
+    visa_produkter(produkt_fält);
 }
 
 function Off_white_retro_kundvagn(){
@@ -84,7 +84,7 @@ function Off_white_retro_kundvagn(){
     console.log("produkt fält: "+produkt_fält);
     produkt_fält_Json=JSON.stringify(produkt_fält);
     window.localStorage.setItem("produkt_fält", produkt_fält_Json);
-    visa_kundvagn(produkt_fält);
+    visa_produkter(produkt_fält);
 }
 
 function Dior_1_kundvagn(){
@@ -105,11 +105,28 @@ function Dior_1_kundvagn(){
     console.log("produkt fält: "+produkt_fält);
     produkt_fält_Json=JSON.stringify(produkt_fält);
     window.localStorage.setItem("produkt_fält", produkt_fält_Json);
-    visa_produkter(produkt);
+    visa_produkter(produkt_fält);
 }
 
 function rensa(){
-    localStorage.clear()
+    let produkt_div = document.querySelector(".varukorg");
+    produkt_div.innerHTML="";
+    localStorage.clear();
 }
 
 
+function visa_produkter(produkt){
+    if (!produkt){
+        console.log("visa_produkter TOM")
+        return;
+    }
+    let produkt_div = document.querySelector(".varukorg")
+    produkt_div.innerHTML="";
+    for (let i = 0; i < produkt.length; i++) {
+        let article = document.createElement("article");
+        let p = document.createElement("p");
+        p.innerHTML=produkt[i].namn+" "+produkt[i].pris+" kr";
+        article.append(p);
+        produkt_div.append(article);
+    }
+}
